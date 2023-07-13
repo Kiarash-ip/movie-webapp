@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "IRANSans_Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/public/fonts/woff/IRANSansX-Bold.woff") format("woff"),
+    url("/public/fonts/woff2/IRANSansX-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IRANSans_Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/public/fonts/woff/IRANSansX-Bold.woff") format("woff"),
+    url("/public/fonts/woff2/IRANSansX-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IRANSans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/public/fonts/woff/IRANSansX-Regular.woff") format("woff"),
+    url("/public/fonts/woff2/IRANSansX-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IRANSans_Bold_Numeral";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/public/fonts/farsi-numerals/Woff/IRANSansXFaNum-Bold.woff")
+      format("woff"),
+    url("/public/fonts/farsi-numerals/Woff2/IRANSansXFaNum-Bold.woff2")
+      format("woff2");
+}
+
+@font-face {
+  font-family: "IRANSans_Medium_Numeral";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/public/fonts/farsi-numerals/Woff/IRANSansXFaNum-Bold.woff")
+      format("woff"),
+    url("/public/fonts/farsi-numerals/Woff2/IRANSansXFaNum-Bold.woff2")
+      format("woff2");
+}
+
+@font-face {
+  font-family: "IRANSans_Numeral";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/public/fonts/farsi-numerals/Woff/IRANSansXFaNum-Regular.woff")
+      format("woff"),
+    url("/public/fonts/farsi-numerals/Woff2/IRANSansXFaNum-Regular.woff2")
+      format("woff2");
+}
+
+html {
+  font-family: "IRANSans";
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  @apply bg-main;
+}
+
+main {
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination {
+  z-index: 100;
+  bottom: 20%;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 0.15;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.hero-section-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #202735 0%, rgba(32, 39, 53, 0) 30%);
+  z-index: 5;
+  user-select: none;
+  pointer-events: none;
+}
+
+.hero-section-gradient::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, #202735 0%, rgba(32, 39, 53, 0) 40%);
+  z-index: 5;
+  user-select: none;
+  pointer-events: none;
+}
+
+.movieSlider-swiper {
+  position: relative;
+}
+
+.movieSlider-swiper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #202735 0%, rgba(32, 39, 53, 0) 40%);
+  z-index: 5;
+  user-select: none;
+  pointer-events: none;
+}
+
+.movies-slider {
+  position: relative;
+}
+
+.movies-slider::after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  inset: 0;
+  backdrop-filter: blur(5px);
+  pointer-events: none;
+}
+
+.slider_cart--gradient::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, #202735 0%, rgba(32, 39, 53, 0) 40%);
+  z-index: 5;
+  user-select: none;
+  pointer-events: none;
+}
+
+.subscription-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #202735 0%, rgba(32, 39, 53, 0) 50%);
+  z-index: 5;
+  user-select: none;
+  pointer-events: none;
+}
+
+.subscription-gradient::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(270deg, #202735 0%, rgba(32, 39, 53, 0) 50%);
+  z-index: 5;
+  user-select: none;
+  pointer-events: none;
+}
+
+.dome-image-container > img {
+  z-index: 2;
+}
+
+.dome-image-container::after {
+  content: "";
+  @apply absolute top-1/2 bottom-0 left-0 -translate-y-1/2 -translate-x-7 rounded-full w-[130px] h-[130px];
+}
+
+.traditional-bg {
+  background: linear-gradient(#202735, #202735) center/100% 100% no-repeat,
+    url(/images/traditional-bg.png) right/55% 100% no-repeat;
+  text-align: center;
+  background-blend-mode: multiply;
+  padding: 100px 0px;
+}
+
+.navbar-scrolled {
+  background-color: rgba(0, 0, 0, 0.5);
+}
