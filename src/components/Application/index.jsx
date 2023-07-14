@@ -19,7 +19,7 @@ export default function Application() {
           </div>
         </div>
         <div className="h-[396px] self-start translate-y-4">
-          <img src="/images/screen.png" className="h-full" />
+          <img src="/images/screen.png" className="h-full object-contain" />
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@ import DomeShape from "../Globals/DomeShape";
 
 export default function Services() {
   return (
-    <div className="container mx-auto flex items-center justify-center gap-[35px] mb-[125px]">
+    <div className="container mx-auto flex items-center justify-center flex-wrap gap-[35px] mb-[125px]">
       <DomeShape
         url="/images/headset.png"
         desc="شنیدن

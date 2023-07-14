@@ -10,8 +10,8 @@ export default function BannerSerial() {
           "linear-gradient(270deg, #2A3243 0%, rgba(42, 50, 67, 0.00) 100%)",
       }}
     >
-      <div className="flex flex-col gap-[35px] mr-[71px] ml-[87px]">
-        <p className="text-[28px] font-black leading-[45px] text-white max-w-[20ch]">
+      <div className="flex flex-col gap-[35px] lg:mr-[71px] mr-[41px] lg:ml-[87px] ml-[57px]">
+        <p className="lg:text-[28px] text-2xl font-black leading-[45px] text-white max-w-[20ch]">
           هرچقدر بیشتر فیلم ببینی میلیونر میشی ...
         </p>
         <Button

@@ -31,7 +31,7 @@ export default function Button({ text, theme }) {
         </svg>
       </div>
       <span
-        className="text-base font-medium leading-normal pl-[22px]"
+        className="text-base font-medium leading-normal pl-[22px] whitespace-nowrap"
         style={{ color: theme[3] ? theme[3] : "#fff" }}
       >
         {text}

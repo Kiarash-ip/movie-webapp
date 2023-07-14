@@ -9,11 +9,11 @@ export default function Footer() {
           <img src="/svg/logo.svg" />
           <hr className="w-full bg-bg-light" />
         </div>
-        <p className="text-base font-medium leading-[32px] text-white">
+        <p className="text-base font-medium leading-[32px] text-white mb-3">
           پلتفرم نمایش آنلاین فیلم
         </p>
-        <div className="flex items-end">
-          <ul className="flex items-center gap-[30px] text-white text-base leading-[22px] font-medium">
+        <div className="flex items-end flex-wrap gap-4">
+          <ul className="flex items-center lg:gap-[30px] gap-5 text-white text-base leading-[22px] font-medium">
             {footerNavigationLinks.map((item) => {
               return (
                 <li
@@ -39,7 +39,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div>
+      <div className="aspect-square">
         <img src="/svg/QR.svg" />
       </div>
     </footer>

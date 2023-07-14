@@ -10,15 +10,15 @@ export default function BannerFilm({ order, style = "" }) {
         background: "url(/images/gray-bg.png)",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
-        backgroundSize: "100%",
+        backgroundSize: "100% 100%",
       }}
     >
-      <div className="container mx-auto h-full flex items-start gap-[40px] justify-center">
+      <div className="container mx-auto h-full flex items-start lg:gap-[40px] gap-[20px] justify-center">
         <div
-          className="flex flex-col justify-center gap-[27px] self-center mx-[60px]"
+          className="flex flex-col justify-center gap-[27px] self-center lg:mx-[60px] mx-[30px]"
           style={{ order: order }}
         >
-          <h3 className="text-[25px] font-black leading-[38px] max-w-[15ch] text-center text-white">
+          <h3 className="lg:text-[25px] text-xl font-black leading-[38px] lg:max-w-[15ch] max-w-[18ch] text-center text-white">
             تماشــای فیلم‌هـــای ایرانــــی و خارجـــــی بـه روز در منـــه
             بـــاخ
           </h3>
@@ -29,11 +29,9 @@ export default function BannerFilm({ order, style = "" }) {
         </div>
         {[1, 2, 3, 4].map((id) => {
           return (
-            <img
-              key={id}
-              src={`/images/0${id}.png`}
-              style={{ order: order === id ? id + 1 : id }}
-            />
+            <div style={{ order: order === id ? id + 1 : id }}>
+              <img key={id} src={`/images/0${id}.png`} />
+            </div>
           );
         })}
       </div>

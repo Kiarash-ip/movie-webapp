@@ -182,10 +182,11 @@ main {
 
 .traditional-bg {
   background: linear-gradient(#202735, #202735) center/100% 100% no-repeat,
-    url(/images/traditional-bg.png) right/55% 100% no-repeat;
+    url(/images/traditional-bg.png) right no-repeat;
   text-align: center;
   background-blend-mode: multiply;
   padding: 100px 0px;
+  @apply bg-contain;
 }
 
 .navbar-scrolled {
