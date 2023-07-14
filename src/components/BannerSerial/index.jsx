@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Globals/Button";
 
 export default function BannerSerial() {
   return (
@@ -13,14 +14,10 @@ export default function BannerSerial() {
         <p className="text-[28px] font-black leading-[45px] text-white max-w-[20ch]">
           هرچقدر بیشتر فیلم ببینی میلیونر میشی ...
         </p>
-        <button className="self-start bg-secondary rounded-full p-[5px] flex items-center gap-[9px]">
-          <div className="w-[40px] h-[40px] bg-white rounded-full flex items-center justify-center">
-            <img src="/svg/triangle.svg" />
-          </div>
-          <span className="text-base text-white font-medium leading-normal pl-[22px]">
-            مشاهده سریال‌ها
-          </span>
-        </button>
+        <Button
+          text="مشاهده سریال‌ها"
+          theme={["bg-secondary", "bg-white", "#202735"]}
+        />
       </div>
       <div className="relative grow h-full">
         <img

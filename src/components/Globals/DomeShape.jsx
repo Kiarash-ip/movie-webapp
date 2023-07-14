@@ -23,7 +23,7 @@ export default function DomeShape({ url, desc, theme, gradient }) {
         <p className="text-white text-xl font-bold leading-7 max-w-[15ch] text-justify">
           {desc}
         </p>
-        <button className="w-[50px] h-[50px] self-end rounded-[18px] bg-bg-light transition-colors hover:bg-slate-700 flex items-center justify-center">
+        <button className="w-[50px] h-[50px] self-end rounded-[18px] bg-bg-light transition-colors hover:bg-[#ffffff4d] flex items-center justify-center">
           <img src="/svg/arrow-right.svg" className="rotate-180" />
         </button>
       </div>

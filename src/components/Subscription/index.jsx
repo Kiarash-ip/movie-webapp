@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Globals/Button";
 
 export default function Subscription() {
   return (
@@ -18,7 +19,7 @@ export default function Subscription() {
           <p className="text-[28px] font-black leading-[45px] text-white max-w-[20ch] mb-[35px] ">
             لذت تماشـــای سـاعت‌ها فیلم و سریال و موسیقی در منـــــــه باخ
           </p>
-          <button className="bg-white rounded-full p-[5px] flex items-center gap-[9px]">
+          {/* <button className="bg-white rounded-full p-[5px] flex items-center gap-[9px]">
             <div className="w-[40px] h-[40px] bg-[#1B202C] rounded-full flex items-center justify-center">
               <svg
                 width="13"
@@ -37,7 +38,11 @@ export default function Subscription() {
             <span className="text-base text-[#1B202C] font-medium leading-normal pl-[22px]">
               خرید اشتراک
             </span>
-          </button>
+          </button> */}
+          <Button
+            text="خرید اشتراک"
+            theme={["bg-white", "bg-main", "#fff", "#1B202C"]}
+          />
         </div>
       </div>
     </div>

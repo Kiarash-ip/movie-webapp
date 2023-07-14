@@ -11,6 +11,7 @@ module.exports = {
       main: "#202735",
       "main-light": "#686281",
       "bg-light": "#ffffff33",
+      "icon-bg": "#ffffff26",
     },
     fontFamily: {
       normal: ["IRANSans", "Arial"],

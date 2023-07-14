@@ -3,7 +3,13 @@ import { twMerge } from "tailwind-merge";
 
 export default function ArrowBtn({ style, clickHandler }) {
   return (
-    <button className={twMerge("cursor-pointer", style)} onClick={clickHandler}>
+    <button
+      className={twMerge(
+        "cursor-pointer hover:bg-bg-light rounded-full transition-colors mr-[3px]",
+        style
+      )}
+      onClick={clickHandler}
+    >
       <svg
         width="24"
         height="24"

@@ -4,7 +4,7 @@ import Content from "./Content";
 
 export default function Header() {
   return (
-    <header className="hero-section-gradient w-full h-5/6 relative flex items-center">
+    <header className="w-full h-5/6 relative flex items-center">
       <Slider />
     </header>
   );

@@ -43,7 +43,7 @@ export default function MovieSlider({
         <a className="text-main-light text-sm font-medium leading-normal">
           مشاهده بیشتر
         </a>
-        <div className="w-[32px] h-[32px] flex justify-center items-center bg-[#645E7D] rounded-full mr-auto">
+        <div className="w-[32px] h-[32px] flex justify-center items-center bg-[#645E7D] hover:bg-[#645e7d9d] transition-colors rounded-full mr-auto cursor-pointer">
           <img
             src="/svg/filter.svg"
             className="w-[20px] h-[20px] object-contain"

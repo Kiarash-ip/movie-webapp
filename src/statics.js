@@ -232,3 +232,30 @@ export const onlineMovies = [
     url: "/images/online-3.png",
   },
 ];
+
+export const footerNavigationLinks = [
+  { id: 0, title: "درباره ما" },
+  { id: 1, title: "تماس با ما" },
+  { id: 2, title: "قوانین و مقررات" },
+  { id: 3, title: "سوالات متداول" },
+  { id: 4, title: "تبلیغ در منه باخ" },
+];
+
+export const footerSocialIcons = [
+  {
+    id: 0,
+    src: "/svg/aparat.svg",
+  },
+  {
+    id: 1,
+    src: "/svg/instagram.svg",
+  },
+  {
+    id: 2,
+    src: "/svg/telegram.svg",
+  },
+  {
+    id: 3,
+    src: "/svg/whatsapp.svg",
+  },
+];

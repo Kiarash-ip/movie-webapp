@@ -1,4 +1,5 @@
 import React from "react";
+import { footerNavigationLinks, footerSocialIcons } from "../../statics";
 
 export default function Footer() {
   return (
@@ -13,25 +14,28 @@ export default function Footer() {
         </p>
         <div className="flex items-end">
           <ul className="flex items-center gap-[30px] text-white text-base leading-[22px] font-medium">
-            <li className="cursor-pointer">درباره ما</li>
-            <li className="cursor-pointer">تماس با ما</li>
-            <li className="cursor-pointer">قوانین و مقررات</li>
-            <li className="cursor-pointer">سوالات متداول</li>
-            <li className="cursor-pointer">تبلیغ در منه باخ</li>
+            {footerNavigationLinks.map((item) => {
+              return (
+                <li
+                  className="cursor-pointer hover:-translate-y-1 transition-transform duration-200"
+                  key={item.id}
+                >
+                  {item.title}
+                </li>
+              );
+            })}
           </ul>
           <ul className="flex items-center gap-4 mr-auto ml-auto">
-            <li className="cursor-pointer">
-              <img src="/svg/Insta.svg" />
-            </li>
-            <li className="cursor-pointer">
-              <img src="/svg/Whatsapp.svg" />
-            </li>
-            <li className="cursor-pointer">
-              <img src="/svg/Insta.svg" />
-            </li>
-            <li className="cursor-pointer">
-              <img src="/svg/Whatsapp.svg" />
-            </li>
+            {footerSocialIcons.map((icon) => {
+              return (
+                <li
+                  className="cursor-pointer w-[50px] h-[50px] flex justify-center items-center bg-bg-light transition-colors hover:bg-[#ffffff4d] rounded-full"
+                  key={icon.id}
+                >
+                  <img src={icon.src} />
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

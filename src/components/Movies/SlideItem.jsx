@@ -49,7 +49,7 @@ export default function SlideItem({
         </p>
         <button
           onClick={() => swiper.slidePrev()}
-          className="w-[50px] h-[50px] hover:bg-slate-700 transition-colors rounded-full border border-white flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2     translate-x-[200%]"
+          className="w-[50px] h-[50px] hover:bg-bg-light transition-colors rounded-full border border-white flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2     translate-x-[200%]"
         >
           <img
             src="/svg/arrow-right.svg"
@@ -58,7 +58,7 @@ export default function SlideItem({
         </button>
         <button
           onClick={() => swiper.slideNext()}
-          className="w-[50px] h-[50px] hover:bg-slate-700 transition-colors rounded-full border border-white flex items-center justify-center absolute left-0 top-1/2 -translate-y-1/2 translate-x-[-200%]"
+          className="w-[50px] h-[50px] hover:bg-bg-light transition-colors rounded-full border border-white flex items-center justify-center absolute left-0 top-1/2 -translate-y-1/2 translate-x-[-200%]"
         >
           <img
             src="/svg/arrow-right.svg"

@@ -1,5 +1,6 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
+import Button from "../Globals/Button";
 
 export default function BannerFilm({ order, style = "" }) {
   return (
@@ -21,14 +22,10 @@ export default function BannerFilm({ order, style = "" }) {
             تماشــای فیلم‌هـــای ایرانــــی و خارجـــــی بـه روز در منـــه
             بـــاخ
           </h3>
-          <button className="bg-main rounded-full p-[5px] flex items-center gap-[9px]">
-            <div className="w-[40px] h-[40px] bg-white rounded-full flex items-center justify-center">
-              <img src="/svg/triangle.svg" />
-            </div>
-            <span className="text-base text-white font-medium leading-normal pl-[22px]">
-              مشاهده فیلم‌ها
-            </span>
-          </button>
+          <Button
+            text="مشاهده فیلم‌ها"
+            theme={["bg-main", "bg-white", "#202735"]}
+          />
         </div>
         {[1, 2, 3, 4].map((id) => {
           return (

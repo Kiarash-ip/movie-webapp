@@ -1,5 +1,6 @@
 import React from "react";
 import Tag from "../Globals/Tag";
+import Button from "../Globals/Button";
 
 export default function Content({ title, description, tag, url }) {
   return (
@@ -21,14 +22,10 @@ export default function Content({ title, description, tag, url }) {
           <p className="text-lg text-white leading-normal mb-9 max-w-[55ch]">
             {description}
           </p>
-          <button className="bg-secondary rounded-full p-[5px] flex items-center gap-[9px]">
-            <div className="w-[40px] h-[40px] bg-white rounded-full flex items-center justify-center">
-              <img src="/svg/triangle.svg" />
-            </div>
-            <span className="text-base text-white font-medium leading-normal pl-[22px]">
-              مشاهده سریال
-            </span>
-          </button>
+          <Button
+            text="مشاهده سریال"
+            theme={["bg-secondary", "bg-white", "#202735"]}
+          />
         </div>
         <div className="flex items-end gap-5 mr-auto">
           <div className="w-[100px] h-[100px] bg-[#ffffff33] backdrop:blur-[5px] cursor-pointer flex flex-col justify-center items-center rounded-3xl gap-[6px] select-none">
