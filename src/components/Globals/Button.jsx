@@ -11,7 +11,7 @@ export default function Button({ text, theme }) {
     >
       <div
         className={twMerge(
-          "w-[40px] h-[40px] rounded-full flex items-center justify-center",
+          "lg:w-[40px] w-[35px] lg:h-[40px] h-[35px] rounded-full flex items-center justify-center",
           theme[1]
         )}
       >
@@ -31,7 +31,7 @@ export default function Button({ text, theme }) {
         </svg>
       </div>
       <span
-        className="text-base font-medium leading-normal pl-[22px] whitespace-nowrap"
+        className="lg:text-base text-xs font-medium leading-normal pl-[22px] whitespace-nowrap"
         style={{ color: theme[3] ? theme[3] : "#fff" }}
       >
         {text}

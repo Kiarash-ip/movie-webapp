@@ -15,11 +15,11 @@ export default function Slider() {
         modules={[Pagination, Autoplay]}
         pagination={true}
         className="mySwiper"
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
-          el: paginationContainer.current,
-        }}
+        // autoplay={{
+        //   delay: 5000,
+        //   disableOnInteraction: false,
+        //   el: paginationContainer.current,
+        // }}
         loop={true}
       >
         {moviesData.map((movie) => {

@@ -128,17 +128,11 @@ main {
   pointer-events: none;
 }
 
-.movies-slider {
-  position: relative;
+.swiper-slide-active.movie__slide__item {
+  z-index: 5;
 }
 
-.movies-slider::after {
-  content: "";
-  position: absolute;
-  z-index: 10;
-  inset: 0;
-  backdrop-filter: blur(5px);
-  pointer-events: none;
+.movie__slide__item {
 }
 
 .slider_cart--gradient::after {
@@ -190,5 +184,15 @@ main {
 }
 
 .navbar-scrolled {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.movies-swiper-container {
+  position: relative;
+}
+
+@media screen and (max-width: 450px) {
+  .movie__slide__item {
+    width: 350px;
+  }
 }

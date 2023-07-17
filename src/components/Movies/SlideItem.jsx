@@ -14,11 +14,17 @@ export default function SlideItem({
   const swiper = useSwiper();
 
   return (
-    <div className={`${swiperSlide.isActive ? "" : "movies-slider"}`}>
-      <img
-        src={`${url}`}
-        className="w-[509px] h-[368px] object-cover mb-5 rounded-[25px] shadow-[0px_6px_90px_0px_#1C1B2C]"
-      />
+    <div className={`${swiperSlide.isActive ? "" : "movies-slider"} w-full`}>
+      <div
+        className={`movie__slide__item--image--container w-full h-[368px] mb-5 rounded-[25px] shadow-[0px_6px_90px_0px_#1C1B2C] ${
+          !!!swiperSlide.isActive && "blur-sm"
+        }`}
+      >
+        <img
+          src={`${url}`}
+          className="w-full h-full object-cover rounded-[25px]"
+        />
+      </div>
       <div
         className="transition-opacity relative"
         style={{ opacity: `${swiperSlide.isActive ? "1" : "0"}` }}
@@ -49,7 +55,7 @@ export default function SlideItem({
         </p>
         <button
           onClick={() => swiper.slidePrev()}
-          className="w-[50px] h-[50px] hover:bg-bg-light transition-colors rounded-full border border-white flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2     translate-x-[200%]"
+          className="w-[50px] h-[50px] hover:bg-bg-light transition-colors rounded-full border border-white hidden md:flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2     translate-x-[200%]"
         >
           <img
             src="/svg/arrow-right.svg"
@@ -58,7 +64,7 @@ export default function SlideItem({
         </button>
         <button
           onClick={() => swiper.slideNext()}
-          className="w-[50px] h-[50px] hover:bg-bg-light transition-colors rounded-full border border-white flex items-center justify-center absolute left-0 top-1/2 -translate-y-1/2 translate-x-[-200%]"
+          className="w-[50px] h-[50px] hover:bg-bg-light transition-colors rounded-full border border-white hidden md:flex  items-center justify-center absolute left-0 top-1/2 -translate-y-1/2 translate-x-[-200%]"
         >
           <img
             src="/svg/arrow-right.svg"

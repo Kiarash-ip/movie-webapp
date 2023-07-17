@@ -10,16 +10,16 @@ export default function Content({ title, description, tag, url }) {
         backgroundImage: `url(${url})`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "100%",
+        backgroundSize: "cover",
       }}
     >
-      <div className="container mx-auto flex z-20">
+      <div className="container mx-auto flex sm:flex-row flex-col z-20">
         <div>
           <Tag tag={tag} />
-          <h3 className="text-3xl text-white font-bold leading-normal mb-4">
+          <h3 className="lg:text-3xl sm:text-2xl text-xl text-white font-bold leading-normal mb-4">
             {title}
           </h3>
-          <p className="text-lg text-white leading-normal mb-9 max-w-[55ch]">
+          <p className="lg:text-lg sm:text-base text-sm text-white leading-normal mb-9 lg:max-w-[55ch] sm:max-w-[45ch]">
             {description}
           </p>
           <Button
@@ -28,15 +28,15 @@ export default function Content({ title, description, tag, url }) {
           />
         </div>
         <div className="flex items-end gap-5 mr-auto">
-          <div className="w-[100px] h-[100px] bg-[#ffffff33] backdrop:blur-[5px] cursor-pointer flex flex-col justify-center items-center rounded-3xl gap-[6px] select-none">
-            <img src="/svg/subscription.svg" className="h-[45px]" />
-            <span className="text-sm font-bold leading-5 text-white">
+          <div className="lg:w-[100px] w-[80px] lg:h-[100px] h-[80px] bg-[#ffffff33] backdrop:blur-[5px] cursor-pointer flex flex-col justify-center items-center rounded-3xl gap-[6px] select-none">
+            <img src="/svg/subscription.svg" className="h-[35px]" />
+            <span className="lg:text-sm text-xs font-bold leading-5 text-white">
               خرید اشتراک
             </span>
           </div>
-          <div className="w-[100px] h-[100px] bg-[#ffffff33] backdrop:blur-[5px] cursor-pointer flex flex-col justify-center items-center rounded-3xl gap-[6px] select-none">
-            <img src="/svg/movie.svg" className="h-[45px]" />
-            <span className="text-sm font-bold leading-5 text-white">
+          <div className="lg:w-[100px] w-[80px] lg:h-[100px] h-[80px] bg-[#ffffff33] backdrop:blur-[5px] cursor-pointer flex flex-col justify-center items-center rounded-3xl gap-[6px] select-none">
+            <img src="/svg/movie.svg" className="h-[35px]" />
+            <span className="lg:text-sm text-xs font-bold leading-5 text-white">
               مفته باخ
             </span>
           </div>

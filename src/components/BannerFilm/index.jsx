@@ -29,7 +29,7 @@ export default function BannerFilm({ order, style = "" }) {
         </div>
         {[1, 2, 3, 4].map((id) => {
           return (
-            <div style={{ order: order === id ? id + 1 : id }}>
+            <div style={{ order: order === id ? id + 1 : id }} key={id}>
               <img key={id} src={`/images/0${id}.png`} />
             </div>
           );

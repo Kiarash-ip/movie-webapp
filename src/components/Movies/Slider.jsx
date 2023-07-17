@@ -9,25 +9,29 @@ import { sliderMoviesData } from "../../statics";
 
 export default function Slider() {
   return (
-    <div className="">
+    <div className="movies-swiper-container">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={4}
-        loop={true}
+        slidesPerView={"auto"}
+        spaceBetween={10}
+        autoHeight={true}
         coverflowEffect={{
-          rotate: 5,
-          stretch: 10,
-          depth: 0,
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
           slideShadows: false,
-          scale: 0.8,
         }}
         modules={[EffectCoverflow]}
-        className="mySwiper"
+        className="mySwiper "
       >
         {sliderMoviesData.map((movie) => (
-          <SwiperSlide key={movie.id} className="z-50">
+          <SwiperSlide
+            key={movie.id}
+            className="sm:w-[509px] w-[400px] movie__slide__item"
+          >
             <SlideItem
               englishTitle={movie.englishTitle}
               persianTitle={movie.persianTitle}
