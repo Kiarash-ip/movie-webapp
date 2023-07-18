@@ -37,7 +37,7 @@ export default function MovieSlider({
   return (
     <div className="container mx-auto mb-[125px]">
       <div className="flex items-center mb-6">
-        <h4 className="text-[25px] text-white font-bold leading-normal ml-[11px]">
+        <h4 className="md:text-[25px] text-xl text-white font-bold leading-normal ml-[11px]">
           {title}
         </h4>
         <a className="text-main-light text-sm font-medium leading-normal">

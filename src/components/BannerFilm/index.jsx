@@ -13,9 +13,9 @@ export default function BannerFilm({ order, style = "" }) {
         backgroundSize: "100% 100%",
       }}
     >
-      <div className="container mx-auto h-full flex items-start lg:gap-[40px] gap-[20px] justify-center">
+      <div className="container mx-auto h-full flex items-start lg:gap-[40px] gap-[20px] justify-center overflow-x-clip">
         <div
-          className="flex flex-col justify-center gap-[27px] self-center lg:mx-[60px] mx-[30px]"
+          className="flex flex-col justify-center gap-[27px] self-center lg:mx-[60px] mx-[30px] min-w-[160px]"
           style={{ order: order }}
         >
           <h3 className="lg:text-[25px] text-xl font-black leading-[38px] lg:max-w-[15ch] max-w-[18ch] text-center text-white">
@@ -29,7 +29,11 @@ export default function BannerFilm({ order, style = "" }) {
         </div>
         {[1, 2, 3, 4].map((id) => {
           return (
-            <div style={{ order: order === id ? id + 1 : id }} key={id}>
+            <div
+              style={{ order: order === id ? id + 1 : id }}
+              key={id}
+              className="min-w-[70px]"
+            >
               <img key={id} src={`/images/0${id}.png`} />
             </div>
           );

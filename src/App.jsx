@@ -50,7 +50,7 @@ function App() {
         cartWidth={345}
         spaceBetween={40}
       />
-      <BannerFilm order={1} style="mb-0" />
+      <BannerFilm order={1} style="mb-0 sm:block hidden" />
       <Subscription />
       <Services />
       <Application />

@@ -68,6 +68,7 @@ html {
 
 body {
   height: 100%;
+  overflow-x: hidden;
   @apply bg-main;
 }
 
@@ -180,7 +181,7 @@ main {
   text-align: center;
   background-blend-mode: multiply;
   padding: 100px 0px;
-  @apply bg-contain;
+  @apply sm:bg-contain bg-cover;
 }
 
 .navbar-scrolled {
